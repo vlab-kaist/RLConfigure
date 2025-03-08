@@ -27,7 +27,6 @@ legendary launch Rocket League
 4. wine 다운로드 (sudo apt install wine64) OS에 따라 wine 달라짐
 5. rlbot.toml 의 Launcher 부분 아래와 같이 수정하기
 
-xhost +local:docker
 
 
 ```toml
@@ -36,3 +35,10 @@ launcher_arg = "legendary"
 ```
 
 1. python run.py
+## Docker config
+Install docker
+and execute
+xhost +local:docker
+which allows docker to use your display
+
+sudo docker run -it   -e DISPLAY=$DISPLAY   -v /tmp/.X11-unix:/tmp/.X11-unix -v ~/Games:/Games -v /wine:/wine --network host rl
