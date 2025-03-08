@@ -42,3 +42,11 @@ xhost +local:docker
 which allows docker to use your display
 
 sudo docker run -it   -e DISPLAY=$DISPLAY   -v /tmp/.X11-unix:/tmp/.X11-unix -v ~/Games:/Games -v /wine:/wine --network host rl
+
+
+도커 실행하고
+legendary auth
+legendary import Sugar ../Games/rocketleague
+
+cd rlbot-python-example
+python3 run.py
