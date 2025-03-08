@@ -1,15 +1,24 @@
 # RLConfigure
 ## Legendary
-sudo apt install python3 python3-requests python3-setuptools-git\\
-git clone https://github.com/derrod/legendary.git\\
-cd legendary\\
-(필요시) sudo apt install python3-pip\\
-pip install .\\
-echo 'export PATH=$PATH:~/.local/bin' >> ~/.profile && source ~/.profile\\
-legendary auth\\
-창이 뜬다면 에픽 게임즈 로그인, 안뜨면 터미널에 나오는 url로 접속 후 로그인\\
-legendary install Rocket League\\
-legendary launch Rocket League\\
+sudo apt install python3 python3-requests python3-setuptools-git
+
+git clone https://github.com/derrod/legendary.git
+
+cd legendary
+
+(필요시) sudo apt install python3-pip
+
+pip install .
+
+echo 'export PATH=$PATH:~/.local/bin' >> ~/.profile && source ~/.profile
+
+legendary auth
+
+창이 뜬다면 에픽 게임즈 로그인, 안뜨면 터미널에 나오는 url로 접속 후 로그인
+
+legendary install Rocket League
+
+legendary launch Rocket League
 
 ## Rlbot
 1. https://github.com/VirxEC/rlbot-python-example 레포 clone
